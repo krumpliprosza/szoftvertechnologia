@@ -19,6 +19,10 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
         private int diameter;
         private int loadIndex;
         private string speedIndex = "";
+        private char fuelEfficiency;
+        private char stoppingDistance;
+        private int rollingNoise;
+        private int punctureResistance;
         private int price;
         private int quantity;
         private string location = "";
@@ -96,6 +100,38 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
         public void SetSpeedIndex(string value)
         {
             speedIndex = value;
+        }
+        public char GetFuelEfficiency()
+        {
+            return fuelEfficiency;
+        }
+        public void SetFuelEfficiency(char value)
+        {
+            fuelEfficiency = value;
+        }
+        public char GetStoppingDistance()
+        {
+            return stoppingDistance;
+        }
+        public void SetStoppingDistance(char value)
+        {
+            stoppingDistance = value;
+        }
+        public int GetRollingNoise()
+        {
+            return rollingNoise;
+        }
+        public void SetRollingNoise(int value)
+        {
+            rollingNoise = value;
+        }
+        public int GetPunctureResistance()
+        {
+            return punctureResistance;
+        }
+        public void SetPunctureResistance(int value)
+        {
+            punctureResistance = value;
         }
         public int GetPrice()
         {
