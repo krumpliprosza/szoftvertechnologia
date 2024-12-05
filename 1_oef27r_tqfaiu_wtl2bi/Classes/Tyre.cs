@@ -32,10 +32,25 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
 
         #endregion
         #region public:
+        #region constructors
+        public Tyre() { }
+        public Tyre(int id, string brand, string name, int quantity, string location)
+        {
+            this.id = id;
+            this.name = name;
+            this.brand = brand;
+            this.quantity = quantity;
+            this.location = location;
+        }
+        #endregion
         #region get/set functions
         public int GetId()
         {
             return id;
+        }
+        public void SetId(int value)
+        {
+            id = value;
         }
         public string GetName()
         {
