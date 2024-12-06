@@ -93,7 +93,39 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             // Új keresést indítunk
             PopulateDataGrid(); // Újra feltöltjük a DataGrid-et a friss adatokkal
         }
-    }
+ private void EditButton_Click(object sender, EventArgs e)
+        {
+            if (lowStockDataGrid.SelectedRows.Count > 0)
+            {
+                // A kiválasztott sor adatainak kinyerése
+                var selectedRow = lowStockDataGrid.SelectedRows[0];
+                int tyreId = (int)selectedRow.Cells["Id"].Value;
+                Tyre selectedTyre = stock.Find(t => t.GetId() == tyreId);
+
+                if (selectedTyre != null)
+                {
+                    // A felhasználótól bekérjük az új darabszámot
+                    string newQuantityStr = Microsoft.VisualBasic.Interaction.InputBox($"Adja meg az új darabszámot a következő termékhez: {selectedTyre.GetName()}", "Darabszám szerkesztése");
+                    if (int.TryParse(newQuantityStr, out int newQuantity) && newQuantity >= 0)
+                    {
+                        // A darabszám frissítése
+                        selectedTyre.SetQuantity(newQuantity);
+                        MessageBox.Show("A darabszám sikeresen frissítve lett!");
+
+                        // Az adatbázist frissítjük (a táblázat is frissül)
+                        PopulateDataGrid();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Érvénytelen darabszám. Kérjük, adjon meg egy érvényes számot.");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kérjük, válasszon ki egy terméket a szerkesztéshez.");
+            }
+        }
 }
     }
 }
