@@ -37,18 +37,6 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             // Szerep kiolvasasa
             if (worker != null) { role = int.Parse((string)worker.Element("role")); }
             // Szerep vizsgalata/hibakezeles
-            loginAttempts++; // Növeljük a próbálkozások számát
-                if (loginAttempts >= 3) // Ha három próbálkozás után sem sikerült
-                {
-                    MessageBox.Show("Három hibás bejelentkezési kísérlet! A program leáll.", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Application.Exit(); // Kilépés a programból
-                    return;
-                }
-
-                // Ha még van próbálkozás, akkor értesítjük a felhasználót
-                MessageBox.Show($"Hibás felhasználónév/jelszó! ({3 - loginAttempts} próbálkozás maradt)", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-                
             switch (role)
             {
                 case 0: // Cegvezeto
@@ -66,7 +54,17 @@ namespace _1_oef27r_tqfaiu_wtl2bi
 
                     break;
                 default: // Hibas adatok (nem kerul atirasra a role, igy -1 ertekkel rendelkezik)
-                    MessageBox.Show("Hibás felhasználónév/jelszó!", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+                   loginAttempts++; // Növeljük a próbálkozások számát
+                if (loginAttempts >= 3) // Ha három próbálkozás után sem sikerült
+                {
+                    MessageBox.Show("Három hibás bejelentkezési kísérlet! A program leáll.", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Application.Exit(); // Kilépés a programból
+                    break;
+                }
+
+                // Ha még van próbálkozás, akkor értesítjük a felhasználót
+                MessageBox.Show($"Hibás felhasználónév/jelszó! ({3 - loginAttempts} próbálkozás maradt)", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             };
         }
