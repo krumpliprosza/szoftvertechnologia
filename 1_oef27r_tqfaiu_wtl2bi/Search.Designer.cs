@@ -28,6 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            FoundTyresDataGrid = new DataGridView();
+            ColId = new DataGridViewTextBoxColumn();
+            ColBrand = new DataGridViewTextBoxColumn();
+            ColName = new DataGridViewTextBoxColumn();
+            ColSeason = new DataGridViewTextBoxColumn();
+            ColProfileWidth = new DataGridViewTextBoxColumn();
+            ColProfileRatio = new DataGridViewTextBoxColumn();
+            ColDiameter = new DataGridViewTextBoxColumn();
+            ColFuelEfficiency = new DataGridViewTextBoxColumn();
+            ColStoppingDistance = new DataGridViewTextBoxColumn();
+            ColPunctureResistance = new DataGridViewTextBoxColumn();
+            ColRollingNoise = new DataGridViewTextBoxColumn();
+            ColLoadIndex = new DataGridViewTextBoxColumn();
+            ColSpeedIndex = new DataGridViewTextBoxColumn();
+            ColLocation = new DataGridViewTextBoxColumn();
+            ColQuantity = new DataGridViewTextBoxColumn();
+            ColPrice = new DataGridViewTextBoxColumn();
             brandLabel = new Label();
             nameLabel = new Label();
             seasonLabel = new Label();
@@ -53,29 +70,139 @@
             LoadIndexInput = new NumericUpDown();
             SpeedIndexInput = new ComboBox();
             QueryButton = new Button();
-            FoundTyresDataGrid = new DataGridView();
-            ColBrand = new DataGridViewTextBoxColumn();
-            ColName = new DataGridViewTextBoxColumn();
-            ColSeason = new DataGridViewTextBoxColumn();
-            ColProfileWidth = new DataGridViewTextBoxColumn();
-            ColProfileRatio = new DataGridViewTextBoxColumn();
-            ColDiameter = new DataGridViewTextBoxColumn();
-            ColFuelEfficiency = new DataGridViewTextBoxColumn();
-            ColStoppingDistance = new DataGridViewTextBoxColumn();
-            ColPunctureResistance = new DataGridViewTextBoxColumn();
-            ColRollingNoise = new DataGridViewTextBoxColumn();
-            ColLoadIndex = new DataGridViewTextBoxColumn();
-            ColSpeedIndex = new DataGridViewTextBoxColumn();
-            ColLocation = new DataGridViewTextBoxColumn();
-            ColQuantity = new DataGridViewTextBoxColumn();
-            ColPrice = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)FoundTyresDataGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)DiameterInput).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfileRatioInput).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfileWidthInput).BeginInit();
             ((System.ComponentModel.ISupportInitialize)RollingNoiseInput).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LoadIndexInput).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)FoundTyresDataGrid).BeginInit();
             SuspendLayout();
+            // 
+            // FoundTyresDataGrid
+            // 
+            FoundTyresDataGrid.AllowUserToAddRows = false;
+            FoundTyresDataGrid.AllowUserToDeleteRows = false;
+            FoundTyresDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            FoundTyresDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            FoundTyresDataGrid.Columns.AddRange(new DataGridViewColumn[] { ColId, ColBrand, ColName, ColSeason, ColProfileWidth, ColProfileRatio, ColDiameter, ColFuelEfficiency, ColStoppingDistance, ColPunctureResistance, ColRollingNoise, ColLoadIndex, ColSpeedIndex, ColLocation, ColQuantity, ColPrice });
+            FoundTyresDataGrid.Location = new Point(281, 21);
+            FoundTyresDataGrid.Name = "FoundTyresDataGrid";
+            FoundTyresDataGrid.ReadOnly = true;
+            FoundTyresDataGrid.Size = new Size(482, 417);
+            FoundTyresDataGrid.TabIndex = 25;
+            FoundTyresDataGrid.SelectionChanged += FoundTyresDataGrid_SelectionChanged;
+            // 
+            // ColId
+            // 
+            ColId.HeaderText = "Azonosító";
+            ColId.Name = "ColId";
+            ColId.ReadOnly = true;
+            ColId.Width = 85;
+            // 
+            // ColBrand
+            // 
+            ColBrand.HeaderText = "Márka";
+            ColBrand.Name = "ColBrand";
+            ColBrand.ReadOnly = true;
+            ColBrand.Width = 65;
+            // 
+            // ColName
+            // 
+            ColName.HeaderText = "Név";
+            ColName.Name = "ColName";
+            ColName.ReadOnly = true;
+            ColName.Width = 53;
+            // 
+            // ColSeason
+            // 
+            ColSeason.HeaderText = "Évszak";
+            ColSeason.Name = "ColSeason";
+            ColSeason.ReadOnly = true;
+            ColSeason.Width = 66;
+            // 
+            // ColProfileWidth
+            // 
+            ColProfileWidth.HeaderText = "Profilszélesség";
+            ColProfileWidth.Name = "ColProfileWidth";
+            ColProfileWidth.ReadOnly = true;
+            ColProfileWidth.Width = 108;
+            // 
+            // ColProfileRatio
+            // 
+            ColProfileRatio.HeaderText = "Profilarány";
+            ColProfileRatio.Name = "ColProfileRatio";
+            ColProfileRatio.ReadOnly = true;
+            ColProfileRatio.Width = 89;
+            // 
+            // ColDiameter
+            // 
+            ColDiameter.HeaderText = "Átmérő";
+            ColDiameter.Name = "ColDiameter";
+            ColDiameter.ReadOnly = true;
+            ColDiameter.Width = 72;
+            // 
+            // ColFuelEfficiency
+            // 
+            ColFuelEfficiency.HeaderText = "Takarékosság";
+            ColFuelEfficiency.Name = "ColFuelEfficiency";
+            ColFuelEfficiency.ReadOnly = true;
+            ColFuelEfficiency.Width = 101;
+            // 
+            // ColStoppingDistance
+            // 
+            ColStoppingDistance.HeaderText = "Fékút";
+            ColStoppingDistance.Name = "ColStoppingDistance";
+            ColStoppingDistance.ReadOnly = true;
+            ColStoppingDistance.Width = 61;
+            // 
+            // ColPunctureResistance
+            // 
+            ColPunctureResistance.HeaderText = "Defekttűrés";
+            ColPunctureResistance.Name = "ColPunctureResistance";
+            ColPunctureResistance.ReadOnly = true;
+            ColPunctureResistance.Width = 92;
+            // 
+            // ColRollingNoise
+            // 
+            ColRollingNoise.HeaderText = "Gördülési zaj";
+            ColRollingNoise.Name = "ColRollingNoise";
+            ColRollingNoise.ReadOnly = true;
+            ColRollingNoise.Width = 99;
+            // 
+            // ColLoadIndex
+            // 
+            ColLoadIndex.HeaderText = "Terhelési index";
+            ColLoadIndex.Name = "ColLoadIndex";
+            ColLoadIndex.ReadOnly = true;
+            ColLoadIndex.Width = 109;
+            // 
+            // ColSpeedIndex
+            // 
+            ColSpeedIndex.HeaderText = "Sebességindex";
+            ColSpeedIndex.Name = "ColSpeedIndex";
+            ColSpeedIndex.ReadOnly = true;
+            ColSpeedIndex.Width = 109;
+            // 
+            // ColLocation
+            // 
+            ColLocation.HeaderText = "Helyszín";
+            ColLocation.Name = "ColLocation";
+            ColLocation.ReadOnly = true;
+            ColLocation.Width = 76;
+            // 
+            // ColQuantity
+            // 
+            ColQuantity.HeaderText = "Mennyiség";
+            ColQuantity.Name = "ColQuantity";
+            ColQuantity.ReadOnly = true;
+            ColQuantity.Width = 90;
+            // 
+            // ColPrice
+            // 
+            ColPrice.HeaderText = "Ár";
+            ColPrice.Name = "ColPrice";
+            ColPrice.ReadOnly = true;
+            ColPrice.Width = 44;
             // 
             // brandLabel
             // 
@@ -290,106 +417,6 @@
             QueryButton.UseVisualStyleBackColor = true;
             QueryButton.Click += QueryButton_Click;
             // 
-            // FoundTyresDataGrid
-            // 
-            FoundTyresDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            FoundTyresDataGrid.Columns.AddRange(new DataGridViewColumn[] { ColBrand, ColName, ColSeason, ColProfileWidth, ColProfileRatio, ColDiameter, ColFuelEfficiency, ColStoppingDistance, ColPunctureResistance, ColRollingNoise, ColLoadIndex, ColSpeedIndex, ColLocation, ColQuantity, ColPrice });
-            FoundTyresDataGrid.Location = new Point(281, 21);
-            FoundTyresDataGrid.Name = "FoundTyresDataGrid";
-            FoundTyresDataGrid.Size = new Size(482, 417);
-            FoundTyresDataGrid.TabIndex = 25;
-            FoundTyresDataGrid.SelectionChanged += FoundTyresDataGrid_SelectionChanged;
-            // 
-            // ColBrand
-            // 
-            ColBrand.HeaderText = "Márka";
-            ColBrand.Name = "ColBrand";
-            ColBrand.ReadOnly = true;
-            // 
-            // ColName
-            // 
-            ColName.HeaderText = "Név";
-            ColName.Name = "ColName";
-            ColName.ReadOnly = true;
-            // 
-            // ColSeason
-            // 
-            ColSeason.HeaderText = "Évszak";
-            ColSeason.Name = "ColSeason";
-            ColSeason.ReadOnly = true;
-            // 
-            // ColProfileWidth
-            // 
-            ColProfileWidth.HeaderText = "Profilszélesség";
-            ColProfileWidth.Name = "ColProfileWidth";
-            ColProfileWidth.ReadOnly = true;
-            // 
-            // ColProfileRatio
-            // 
-            ColProfileRatio.HeaderText = "Profilarány";
-            ColProfileRatio.Name = "ColProfileRatio";
-            ColProfileRatio.ReadOnly = true;
-            // 
-            // ColDiameter
-            // 
-            ColDiameter.HeaderText = "Átmérő";
-            ColDiameter.Name = "ColDiameter";
-            ColDiameter.ReadOnly = true;
-            // 
-            // ColFuelEfficiency
-            // 
-            ColFuelEfficiency.HeaderText = "Takarékosság";
-            ColFuelEfficiency.Name = "ColFuelEfficiency";
-            ColFuelEfficiency.ReadOnly = true;
-            // 
-            // ColStoppingDistance
-            // 
-            ColStoppingDistance.HeaderText = "Fékút";
-            ColStoppingDistance.Name = "ColStoppingDistance";
-            ColStoppingDistance.ReadOnly = true;
-            // 
-            // ColPunctureResistance
-            // 
-            ColPunctureResistance.HeaderText = "Defekttűrés";
-            ColPunctureResistance.Name = "ColPunctureResistance";
-            ColPunctureResistance.ReadOnly = true;
-            // 
-            // ColRollingNoise
-            // 
-            ColRollingNoise.HeaderText = "Gördülési zaj";
-            ColRollingNoise.Name = "ColRollingNoise";
-            ColRollingNoise.ReadOnly = true;
-            // 
-            // ColLoadIndex
-            // 
-            ColLoadIndex.HeaderText = "Terhelési index";
-            ColLoadIndex.Name = "ColLoadIndex";
-            ColLoadIndex.ReadOnly = true;
-            // 
-            // ColSpeedIndex
-            // 
-            ColSpeedIndex.HeaderText = "Sebességindex";
-            ColSpeedIndex.Name = "ColSpeedIndex";
-            ColSpeedIndex.ReadOnly = true;
-            // 
-            // ColLocation
-            // 
-            ColLocation.HeaderText = "Helyszín";
-            ColLocation.Name = "ColLocation";
-            ColLocation.ReadOnly = true;
-            // 
-            // ColQuantity
-            // 
-            ColQuantity.HeaderText = "Mennyiség";
-            ColQuantity.Name = "ColQuantity";
-            ColQuantity.ReadOnly = true;
-            // 
-            // ColPrice
-            // 
-            ColPrice.HeaderText = "Ár";
-            ColPrice.Name = "ColPrice";
-            ColPrice.ReadOnly = true;
-            // 
             // Search
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -423,12 +450,12 @@
             Controls.Add(brandLabel);
             Name = "Search";
             Text = "Keresés";
+            ((System.ComponentModel.ISupportInitialize)FoundTyresDataGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)DiameterInput).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfileRatioInput).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfileWidthInput).EndInit();
             ((System.ComponentModel.ISupportInitialize)RollingNoiseInput).EndInit();
             ((System.ComponentModel.ISupportInitialize)LoadIndexInput).EndInit();
-            ((System.ComponentModel.ISupportInitialize)FoundTyresDataGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -461,6 +488,7 @@
         private ComboBox SpeedIndexInput;
         private Button QueryButton;
         private DataGridView FoundTyresDataGrid;
+        private DataGridViewTextBoxColumn ColId;
         private DataGridViewTextBoxColumn ColBrand;
         private DataGridViewTextBoxColumn ColName;
         private DataGridViewTextBoxColumn ColSeason;

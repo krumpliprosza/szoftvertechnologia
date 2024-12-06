@@ -65,7 +65,7 @@
             Controls.Add(menuStrip);
             MainMenuStrip = menuStrip;
             Name = "StorageWorkerHomepage";
-            Text = "Kezdőlap - raktáros";
+            Text = "Kezdőlap";
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
             ResumeLayout(false);

@@ -98,6 +98,10 @@ namespace _1_oef27r_tqfaiu_wtl2bi
 
         private void QueryButton_Click(object sender, EventArgs e)
         {
+            RefreshQueryGrid();
+        }
+        public void RefreshQueryGrid()
+        {
             #region adatbeolvasas
             string brand = BrandInput.Text.Trim();
             string name = NameInput.Text.Trim();
@@ -116,8 +120,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             SearchTyres(brand, name, season, fuelEfficiency, stoppingDistance, punctureResistance,
                         speedIndex, profileWidth, profileRatio, diameter, rollingNoise, loadIndex);
         }
-
-        private void SearchTyres(string brand, string name, string season, string fuelEfficiency, string stoppingDistance, string punctureResistance, string speedIndex, int profileWidth, int profileRatio, int diameter, int rollingNoise, int loadIndex)
+        public void SearchTyres(string brand, string name, string season, string fuelEfficiency, string stoppingDistance, string punctureResistance, string speedIndex, int profileWidth, int profileRatio, int diameter, int rollingNoise, int loadIndex)
         {
             // tyre.xml megnyitasa
             XDocument doc = XDocument.Load("Data/tyre.xml");
@@ -178,6 +181,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             )
             .Select(t => new
             { // Adatok kinyerese a talalt elemekbol
+                ColId = int.Parse(t.Element("id")?.Value),
                 ColBrand = t.Element("brand")?.Value,
                 ColName = t.Element("name")?.Value,
                 ColSeason = t.Element("season")?.Value,
@@ -201,6 +205,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             foreach (var tyre in filteredTyres)
             {
                 FoundTyresDataGrid.Rows.Add(
+                    tyre.ColId,
                     tyre.ColBrand,
                     tyre.ColName,
                     tyre.ColSeason,
@@ -226,16 +231,9 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             {
                 // A kivalasztott sor adatai
                 var selectedRow = FoundTyresDataGrid.SelectedRows[0];
-
-                // Populate controls with tyre data
-                IdTextBox.Text = selectedRow.Cells["ColId"].Value.ToString();
-                NameTextBox.Text = selectedRow.Cells["ColName"].Value.ToString();
-                BrandTextBox.Text = selectedRow.Cells["ColBrand"].Value.ToString();
-                SeasonComboBox.Text = selectedRow.Cells["ColSeason"].Value.ToString();
-                QuantityNumericUpDown.Value = Convert.ToDecimal(selectedRow.Cells["ColQuantity"].Value);
-                PriceNumericUpDown.Value = Convert.ToDecimal(selectedRow.Cells["ColPrice"].Value);
-
-                // Add more fields as necessary...
+                // Az adatokkal meghivja a kezelo konstruktorat
+                TyreDetails tyrepage = new TyreDetails(selectedRow, this);
+                tyrepage.Show();
             }
         }
     }
