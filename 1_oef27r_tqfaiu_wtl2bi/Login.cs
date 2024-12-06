@@ -35,7 +35,28 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                       .FirstOrDefault(w => (string)w.Element("username") == username &&
                                            (string)w.Element("password") == password);
             // Szerep kiolvasasa
-            if (worker != null) { role = int.Parse((string)worker.Element("role")); }
+            if (worker != null) { 
+            UsernameTextBox.Text = (string)worker.Element("username");
+            PasswordTextBox.Text = (string)worker.Element("password");
+            role = int.Parse((string)worker.Element("role")); 
+            }
+             else
+            {
+                MessageBox.Show("A kiválasztott dolgozó nem található!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+             if (IsUsernameTaken(newUsername))
+            {
+                MessageBox.Show("Ez a felhasználónév már foglalt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Ellenőrizzük, hogy a jelszó megfelel-e a kritériumoknak (pl. minimális hossz, speciális karakterek stb.)
+            if (!IsPasswordValid(newPassword))
+            {
+                MessageBox.Show("A megadott jelszó nem megfelelő!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
+                
             // Szerep vizsgalata/hibakezeles
             switch (role)
             {
