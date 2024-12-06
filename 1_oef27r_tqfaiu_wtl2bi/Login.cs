@@ -35,28 +35,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                       .FirstOrDefault(w => (string)w.Element("username") == username &&
                                            (string)w.Element("password") == password);
             // Szerep kiolvasasa
-            if (worker != null) { 
-            UsernameTextBox.Text = (string)worker.Element("username");
-            PasswordTextBox.Text = (string)worker.Element("password");
-            role = int.Parse((string)worker.Element("role")); 
-            }
-             else
-            {
-                MessageBox.Show("A kiválasztott dolgozó nem található!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-             if (IsUsernameTaken(newUsername))
-            {
-                MessageBox.Show("Ez a felhasználónév már foglalt!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Ellenőrizzük, hogy a jelszó megfelel-e a kritériumoknak (pl. minimális hossz, speciális karakterek stb.)
-            if (!IsPasswordValid(newPassword))
-            {
-                MessageBox.Show("A megadott jelszó nem megfelelő!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-
-                
+            if (worker != null) { role = int.Parse((string)worker.Element("role")); }
             // Szerep vizsgalata/hibakezeles
             switch (role)
             {
@@ -75,17 +54,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
 
                     break;
                 default: // Hibas adatok (nem kerul atirasra a role, igy -1 ertekkel rendelkezik)
-                
-                   loginAttempts++; // Növeljük a próbálkozások számát
-                if (loginAttempts >= 3) // Ha három próbálkozás után sem sikerült
-                {
-                    MessageBox.Show("Három hibás bejelentkezési kísérlet! A program leáll.", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Application.Exit(); // Kilépés a programból
-                    break;
-                }
-
-                // Ha még van próbálkozás, akkor értesítjük a felhasználót
-                MessageBox.Show($"Hibás felhasználónév/jelszó! ({3 - loginAttempts} próbálkozás maradt)", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Hibás felhasználónév/jelszó!", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
             };
         }
