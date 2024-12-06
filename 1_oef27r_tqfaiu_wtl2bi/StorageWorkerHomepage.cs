@@ -43,8 +43,15 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             else
             {
                 // Ha pedig nem talalt ilyen termeket, akkor meg jelez a raktarosnak
-                MessageBox.Show("Nem található alacsony darabszámú termék.", "Sikertelen keresés", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Nem található alacsony darabszámú termék.", "Eredménytelen keresés", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void storageQuery_Click(object sender, EventArgs e)
+        {
+            // Kereses oldal megnyitasa
+            Search searchPage = new Search();
+            searchPage.Show();
         }
     }
 }

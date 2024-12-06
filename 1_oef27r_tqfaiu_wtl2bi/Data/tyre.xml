@@ -10,7 +10,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>69</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>V</speedIndex>
     <location>A1</location>
@@ -28,7 +28,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>94</loadIndex>
     <speedIndex>W</speedIndex>
     <location>B2</location>
@@ -46,7 +46,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>C1</location>
@@ -64,7 +64,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>68</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>98</loadIndex>
     <speedIndex>V</speedIndex>
     <location>D1</location>
@@ -82,7 +82,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>B</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>95</loadIndex>
     <speedIndex>T</speedIndex>
     <location>E4</location>
@@ -100,7 +100,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>99</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>A9</location>
@@ -118,7 +118,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>W</speedIndex>
     <location>B2</location>
@@ -136,7 +136,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>96</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>D3</location>
@@ -154,7 +154,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>69</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>C48</location>
@@ -172,7 +172,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>A5</location>
@@ -190,7 +190,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D1</location>
@@ -208,7 +208,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>94</loadIndex>
     <speedIndex>W</speedIndex>
     <location>E2</location>
@@ -226,7 +226,7 @@
     <fuelEfficiency>A</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>69</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>V</speedIndex>
     <location>B3</location>
@@ -244,7 +244,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>68</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D8</location>
@@ -262,7 +262,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>94</loadIndex>
     <speedIndex>W</speedIndex>
     <location>A2</location>
@@ -280,7 +280,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>B</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>T</speedIndex>
     <location>E6</location>
@@ -298,7 +298,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>74</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>99</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>B7</location>
@@ -316,7 +316,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>98</loadIndex>
     <speedIndex>V</speedIndex>
     <location>D3</location>
@@ -334,7 +334,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>75</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>W</speedIndex>
     <location>E1</location>
@@ -352,7 +352,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D8</location>
@@ -370,7 +370,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>95</loadIndex>
     <speedIndex>V</speedIndex>
     <location>C6</location>
@@ -388,7 +388,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>85</loadIndex>
     <speedIndex>H</speedIndex>
     <location>B9</location>
@@ -406,7 +406,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>B2</location>
@@ -424,7 +424,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>75</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>E6</location>
@@ -442,7 +442,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>78</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>V</speedIndex>
     <location>D4</location>
@@ -460,7 +460,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>73</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>T</speedIndex>
     <location>D3</location>
@@ -478,7 +478,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>69</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>A6</location>
@@ -496,7 +496,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>B4</location>
@@ -514,7 +514,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>96</loadIndex>
     <speedIndex>V</speedIndex>
     <location>B7</location>
@@ -532,7 +532,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>90</loadIndex>
     <speedIndex>T</speedIndex>
     <location>E5</location>
@@ -550,7 +550,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>69</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>A3</location>
@@ -568,7 +568,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>85</loadIndex>
     <speedIndex>T</speedIndex>
     <location>A6</location>
@@ -586,7 +586,7 @@
     <fuelEfficiency>A</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>75</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>B2</location>
@@ -604,7 +604,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>E3</location>
@@ -622,7 +622,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>68</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>94</loadIndex>
     <speedIndex>V</speedIndex>
     <location>E7</location>
@@ -640,7 +640,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>73</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>A2</location>
@@ -658,7 +658,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>90</loadIndex>
     <speedIndex>H</speedIndex>
     <location>A4</location>
@@ -676,7 +676,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>99</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>B5</location>
@@ -694,7 +694,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>C3</location>
@@ -712,7 +712,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>74</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D4</location>
@@ -730,7 +730,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>68</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D2</location>
@@ -748,7 +748,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>96</loadIndex>
     <speedIndex>V</speedIndex>
     <location>E3</location>
@@ -766,7 +766,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>C9</location>
@@ -784,7 +784,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>73</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>95</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D6</location>
@@ -802,7 +802,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>74</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>96</loadIndex>
     <speedIndex>V</speedIndex>
     <location>A1</location>
@@ -820,7 +820,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>75</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>W</speedIndex>
     <location>E3</location>
@@ -838,7 +838,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>T</speedIndex>
     <location>C5</location>
@@ -856,7 +856,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>68</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>E7</location>
@@ -874,7 +874,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>E2</location>
@@ -892,7 +892,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>96</loadIndex>
     <speedIndex>V</speedIndex>
     <location>B6</location>
@@ -910,7 +910,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>T</speedIndex>
     <location>B3</location>
@@ -928,7 +928,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>73</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>W</speedIndex>
     <location>D2</location>
@@ -946,7 +946,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>74</rollingNoise>
-    <punctureResistance>1</punctureResistance>
+    <punctureResistance>Igen</punctureResistance>
     <loadIndex>100</loadIndex>
     <speedIndex>Y</speedIndex>
     <location>C7</location>
@@ -964,7 +964,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>T</speedIndex>
     <location>B9</location>
@@ -982,7 +982,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>69</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>C1</location>
@@ -1000,7 +1000,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>T</speedIndex>
     <location>E3</location>
@@ -1018,7 +1018,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>73</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>C8</location>
@@ -1036,7 +1036,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>70</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>A9</location>
@@ -1054,7 +1054,7 @@
     <fuelEfficiency>B</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>71</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>91</loadIndex>
     <speedIndex>H</speedIndex>
     <location>A7</location>
@@ -1072,7 +1072,7 @@
     <fuelEfficiency>C</fuelEfficiency>
     <stoppingDistance>A</stoppingDistance>
     <rollingNoise>72</rollingNoise>
-    <punctureResistance>0</punctureResistance>
+    <punctureResistance>Nem</punctureResistance>
     <loadIndex>92</loadIndex>
     <speedIndex>H</speedIndex>
     <location>D1</location>

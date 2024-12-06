@@ -55,6 +55,7 @@
             storageQuery.Name = "storageQuery";
             storageQuery.Size = new Size(58, 20);
             storageQuery.Text = "Keresés";
+            storageQuery.Click += storageQuery_Click;
             // 
             // StorageWorkerHomepage
             // 
