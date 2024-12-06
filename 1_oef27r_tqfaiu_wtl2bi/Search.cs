@@ -95,7 +95,6 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             SpeedIndexInput.SelectedIndex = 0;
             SpeedIndexInput.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
         private void QueryButton_Click(object sender, EventArgs e)
         {
             RefreshQueryGrid();

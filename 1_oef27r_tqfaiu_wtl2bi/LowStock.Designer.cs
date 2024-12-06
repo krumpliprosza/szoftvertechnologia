@@ -39,6 +39,8 @@
             // 
             // lowStockDataGrid
             // 
+            lowStockDataGrid.AllowUserToAddRows = false;
+            lowStockDataGrid.AllowUserToDeleteRows = false;
             lowStockDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             lowStockDataGrid.Columns.AddRange(new DataGridViewColumn[] { colId, colBrand, colName, colQuantity, colLocation });
             lowStockDataGrid.Location = new Point(-1, 0);
