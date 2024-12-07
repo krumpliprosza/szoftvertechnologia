@@ -29,19 +29,27 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            StorageQuery = new ToolStripMenuItem();
             OrderCreate = new ToolStripMenuItem();
+            StorageQuery = new ToolStripMenuItem();
+            ServiceQuery = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { OrderCreate, StorageQuery });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { OrderCreate, StorageQuery, ServiceQuery });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
+            // 
+            // OrderCreate
+            // 
+            OrderCreate.Name = "OrderCreate";
+            OrderCreate.Size = new Size(113, 20);
+            OrderCreate.Text = "Rendelés felvétele";
+            OrderCreate.Click += OrderCreate_Click;
             // 
             // StorageQuery
             // 
@@ -50,11 +58,12 @@
             StorageQuery.Text = "Termék rendeléshez kötése";
             StorageQuery.Click += StorageQuery_Click;
             // 
-            // OrderCreate
+            // ServiceQuery
             // 
-            OrderCreate.Name = "OrderCreate";
-            OrderCreate.Size = new Size(113, 20);
-            OrderCreate.Text = "Rendelés felvétele";
+            ServiceQuery.Name = "ServiceQuery";
+            ServiceQuery.Size = new Size(183, 20);
+            ServiceQuery.Text = "Szolgáltatás rendeléshez kötése";
+            ServiceQuery.Click += ServiceQuery_Click;
             // 
             // AdministratorHomepage
             // 
@@ -76,5 +85,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem StorageQuery;
         private ToolStripMenuItem OrderCreate;
+        private ToolStripMenuItem ServiceQuery;
     }
 }

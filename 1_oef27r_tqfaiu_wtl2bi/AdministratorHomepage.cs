@@ -23,5 +23,15 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             Search searchPage = new Search();
             searchPage.Show();
         }
+
+        private void OrderCreate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ServiceQuery_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

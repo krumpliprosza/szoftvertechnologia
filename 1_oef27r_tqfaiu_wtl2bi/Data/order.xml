@@ -10,14 +10,19 @@
 			<chosenTyre>
 				<brand>Michelin</brand>
 				<name>Pilot Sport 4</name>
-				<quantity>3</quantity>
+				<quantity>8</quantity>
 			</chosenTyre>
 		</chosenTyres>
 		<chosenServices>
-			
+			<chosenService>
+				<name>Szelepcsere</name>
+				<basePrice>900</basePrice>
+				<diameter>16</diameter>
+				<quantity>4</quantity>
+			</chosenService>
 		</chosenServices>
 		<endDate>2024. 12. 08.</endDate>
-		<totalPrice></totalPrice>
+		<totalPrice>0</totalPrice>
 		<status>Felvételre vár</status>
 	</order>
 </orders>
