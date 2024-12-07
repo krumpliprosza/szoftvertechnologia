@@ -1,0 +1,23 @@
+<orders>
+	<order>
+		<id>1</id>
+		<customer>
+			<name>Kisiván Tibor</name>
+			<telNo>+36302040243</telNo>
+			<licenseNumber>IFF-423</licenseNumber>
+		</customer>
+		<chosenTyres>
+			<chosenTyre>
+				<brand>Michelin</brand>
+				<name>Pilot Sport 4</name>
+				<quantity>3</quantity>
+			</chosenTyre>
+		</chosenTyres>
+		<chosenServices>
+			
+		</chosenServices>
+		<endDate>2024. 12. 08.</endDate>
+		<totalPrice></totalPrice>
+		<status>Felvételre vár</status>
+	</order>
+</orders>
