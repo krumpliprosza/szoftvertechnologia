@@ -3,8 +3,56 @@
 		<name>
 			Kerékcsere
 		</name>
-		<pricePerUnit>
-			
-		</pricePerUnit>
+		<basePrice>
+			700
+		</basePrice>
+	</service>
+	<service>
+		<name>
+			Összeszerelés
+		</name>
+		<basePrice>
+			1100
+		</basePrice>
+	</service>
+	<service>
+		<name>
+			Centírozás
+		</name>
+		<basePrice>
+			1400
+		</basePrice>
+	</service>
+	<service>
+		<name>
+			Szétszerelés
+		</name>
+		<basePrice>
+			800
+		</basePrice>
+	</service>
+	<service>
+		<name>
+			Defektjavítás
+		</name>
+		<basePrice>
+			4500
+		</basePrice>
+	</service>
+	<service>
+		<name>
+			Szelepcsere
+		</name>
+		<basePrice>
+			900
+		</basePrice>
+	</service>
+	<service>
+		<name>
+			Tisztítás
+		</name>
+		<basePrice>
+			1200
+		</basePrice>
 	</service>
 </services>

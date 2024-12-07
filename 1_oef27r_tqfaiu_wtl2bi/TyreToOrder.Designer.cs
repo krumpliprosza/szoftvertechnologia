@@ -61,7 +61,6 @@
             nameLabel = new Label();
             brandLabel = new Label();
             dataGridView1 = new DataGridView();
-            ColId = new DataGridViewTextBoxColumn();
             ColName = new DataGridViewTextBoxColumn();
             ColLicenseNumber = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -344,19 +343,11 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColId, ColName, ColLicenseNumber });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColName, ColLicenseNumber });
             dataGridView1.Location = new Point(232, 15);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(256, 425);
             dataGridView1.TabIndex = 92;
-            // 
-            // ColId
-            // 
-            ColId.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            ColId.HeaderText = "Rendelés száma";
-            ColId.Name = "ColId";
-            ColId.ReadOnly = true;
-            ColId.Width = 106;
             // 
             // ColName
             // 
@@ -450,7 +441,6 @@
         private Label nameLabel;
         private Label brandLabel;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn ColId;
         private DataGridViewTextBoxColumn ColName;
         private DataGridViewTextBoxColumn ColLicenseNumber;
     }
