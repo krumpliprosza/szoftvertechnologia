@@ -40,7 +40,9 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             switch (role)
             {
                 case 0: // Cegvezeto
-
+                    CeoHomepage hp = new CeoHomepage();
+                    hp.Show();
+                    this.Hide();
                     break;
                 case 1: // Ugyintezo
 

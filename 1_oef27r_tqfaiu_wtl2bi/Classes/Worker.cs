@@ -7,13 +7,24 @@ using System.Xml.Linq;
 
 namespace _1_oef27r_tqfaiu_wtl2bi.Classes
 {
-    internal class Worker
+    public class Worker
     {
         #region private:
         #region data members
         private string username = "";
         private string password = "";
         private int role;
+        private string value1;
+        private string value2;
+        private int v;
+
+        public Worker() { }
+        public Worker(string username, string password, int role)
+        {
+            this.username = username;
+            this.password = password;
+            this.role = role;
+        }
         #endregion
         #endregion
         #region protected:
