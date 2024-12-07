@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,9 +35,9 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             }
             // order.xml megnyitasa, id generalasa
             XDocument doc = XDocument.Load("Data/order.xml");
-            int newOrderId = doc.Descendants("order")
+            int newOrderId = (doc.Descendants("order")
                 .Select(o => (int?)o.Element("id"))
-                .Max() ?? 0 + 1;
+                .Max() ?? 0) + 1;
             // Rendeles letrehozasa
             XElement newOrder = new XElement("order",
                 new XElement("id", newOrderId),
@@ -56,6 +57,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             // Mentes
             doc.Save("Data/order.xml");
             MessageBox.Show("Új rendelés sikeresen létrehozva!", "Rendelés hozzáadva", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Debug.WriteLine(doc.ToString());
             // Input torlese
             NameInput.Clear();
             TelNoInput.Clear();

@@ -26,12 +26,14 @@ namespace _1_oef27r_tqfaiu_wtl2bi
 
         private void OrderCreate_Click(object sender, EventArgs e)
         {
-
+            // Rendelest felvevo oldal megnyitasa
+            OrderAdd orderAddPage = new OrderAdd();
+            orderAddPage.Show();
         }
 
         private void ServiceQuery_Click(object sender, EventArgs e)
         {
-
+            // Kereses oldal megnyitasa
         }
     }
 }
