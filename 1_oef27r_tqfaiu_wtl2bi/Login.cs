@@ -63,5 +63,27 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                     break;
             };
         }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter)
+            {
+                LoginButton.PerformClick();
+            }
+        }
+
+        private void Login_Load(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.KeyDown += Login_KeyDown;
+                this.KeyPreview = true;
+            }
+        }
+
+        private void Login_KeyDown1(object? sender, KeyEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
