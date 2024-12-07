@@ -7,7 +7,11 @@
 			<licenseNumber>IFF-423</licenseNumber>
 		</customer>
 		<chosenTyres>
-			
+			<chosenTyre>
+				<brand></brand>
+				<name></name>
+				<quantity></quantity>
+			</chosenTyre>
 		</chosenTyres>
 		<chosenServices>
 			<chosenService>

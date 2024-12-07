@@ -18,6 +18,40 @@ namespace _1_oef27r_tqfaiu_wtl2bi
         public CeoHomepage()
         {
             InitializeComponent();
+
+            XDocument doc = XDocument.Load("Data/order.xml");
+            var orid = doc.Descendants("order")
+                .Select(t => new Order(
+                    t.Element("id").Value,
+                    t.Element("customer").Element("name").Value,
+                    t.Element("customer").Element("telNo").Value,
+                    t.Element("customer").Element("licenseNumber").Value,
+                    t.Element("chosenTyres").Element("chosenTyre").Element("brand").Value,
+                    t.Element("chosenTyres").Element("chosenTyre").Element("name").Value,
+                    t.Element("chosenTyres").Element("chosenTyre").Element("quantity").Value,
+                    t.Element("chosenServices").Element("chosenService").Element("name").Value,
+                    t.Element("chosenServices").Element("chosenService").Element("quantity").Value,
+                    t.Element("endDate").Value,
+                    t.Element("totalPrice").Value
+                    )).ToList();
+            foreach(var order in orid)
+            {
+                dataGridView1.Rows.Add(
+                    order.GetId(),
+                    order.GetName(),
+                    order.GetTelNo(),
+                    order.GetLicenseNo(),
+                    order.getBrandName(),
+                    order.getTyreName(),
+                    order.getTquantity(),
+                    order.getSname(),
+                    order.getSquantity(),
+                    order.getEnddate(),
+                    order.getTotalPrice()
+                    );
+            }
+
+
         }
 
 
@@ -70,6 +104,16 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                 ServicePrices servicePrices = new ServicePrices(sprice);
                 servicePrices.Show();
             }
+        }
+
+        private void CeoHomepage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
