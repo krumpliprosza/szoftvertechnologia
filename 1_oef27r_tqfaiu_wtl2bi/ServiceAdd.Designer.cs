@@ -28,12 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "ServiceAdd";
+            ServiceDataGrid = new DataGridView();
+            ColName = new DataGridViewTextBoxColumn();
+            ColBasePrice = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)ServiceDataGrid).BeginInit();
+            SuspendLayout();
+            // 
+            // ServiceDataGrid
+            // 
+            ServiceDataGrid.AllowUserToAddRows = false;
+            ServiceDataGrid.AllowUserToDeleteRows = false;
+            ServiceDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ServiceDataGrid.Columns.AddRange(new DataGridViewColumn[] { ColName, ColBasePrice });
+            ServiceDataGrid.Location = new Point(12, 12);
+            ServiceDataGrid.Name = "ServiceDataGrid";
+            ServiceDataGrid.ReadOnly = true;
+            ServiceDataGrid.Size = new Size(375, 264);
+            ServiceDataGrid.TabIndex = 0;
+            ServiceDataGrid.SelectionChanged += ServiceDataGrid_SelectionChanged;
+            // 
+            // ColName
+            // 
+            ColName.HeaderText = "Szolgáltatás neve";
+            ColName.Name = "ColName";
+            ColName.ReadOnly = true;
+            // 
+            // ColBasePrice
+            // 
+            ColBasePrice.HeaderText = "Alapár";
+            ColBasePrice.Name = "ColBasePrice";
+            ColBasePrice.ReadOnly = true;
+            // 
+            // ServiceAdd
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(399, 289);
+            Controls.Add(ServiceDataGrid);
+            Name = "ServiceAdd";
+            Text = "Szolgáltatás keresése";
+            ((System.ComponentModel.ISupportInitialize)ServiceDataGrid).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView ServiceDataGrid;
+        private DataGridViewTextBoxColumn ColName;
+        private DataGridViewTextBoxColumn ColBasePrice;
     }
 }

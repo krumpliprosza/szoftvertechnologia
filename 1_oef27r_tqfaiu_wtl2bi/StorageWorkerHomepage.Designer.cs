@@ -32,7 +32,14 @@
             lowStock = new ToolStripMenuItem();
             storageQuery = new ToolStripMenuItem();
             TyreAdd = new ToolStripMenuItem();
+            ItemsToCollectDataGrid = new DataGridView();
+            ColId = new DataGridViewTextBoxColumn();
+            ColBrand = new DataGridViewTextBoxColumn();
+            ColName = new DataGridViewTextBoxColumn();
+            ColLocation = new DataGridViewTextBoxColumn();
+            ColQuantity = new DataGridViewTextBoxColumn();
             menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ItemsToCollectDataGrid).BeginInit();
             SuspendLayout();
             // 
             // menuStrip
@@ -40,7 +47,7 @@
             menuStrip.Items.AddRange(new ToolStripItem[] { lowStock, storageQuery, TyreAdd });
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
-            menuStrip.Size = new Size(800, 24);
+            menuStrip.Size = new Size(586, 24);
             menuStrip.TabIndex = 0;
             menuStrip.Text = "Menü";
             // 
@@ -65,17 +72,61 @@
             TyreAdd.Text = "Új autógumi hozzáadása";
             TyreAdd.Click += TyreAdd_Click;
             // 
+            // ItemsToCollectDataGrid
+            // 
+            ItemsToCollectDataGrid.AllowUserToAddRows = false;
+            ItemsToCollectDataGrid.AllowUserToDeleteRows = false;
+            ItemsToCollectDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ItemsToCollectDataGrid.Columns.AddRange(new DataGridViewColumn[] { ColId, ColBrand, ColName, ColLocation, ColQuantity });
+            ItemsToCollectDataGrid.Location = new Point(12, 27);
+            ItemsToCollectDataGrid.Name = "ItemsToCollectDataGrid";
+            ItemsToCollectDataGrid.Size = new Size(562, 403);
+            ItemsToCollectDataGrid.TabIndex = 131;
+            ItemsToCollectDataGrid.SelectionChanged += ItemsToCollectDataGrid_SelectionChanged;
+            // 
+            // ColId
+            // 
+            ColId.HeaderText = "Azonosító";
+            ColId.Name = "ColId";
+            ColId.ReadOnly = true;
+            // 
+            // ColBrand
+            // 
+            ColBrand.HeaderText = "Márka";
+            ColBrand.Name = "ColBrand";
+            ColBrand.ReadOnly = true;
+            // 
+            // ColName
+            // 
+            ColName.HeaderText = "Név";
+            ColName.Name = "ColName";
+            ColName.ReadOnly = true;
+            // 
+            // ColLocation
+            // 
+            ColLocation.HeaderText = "Helyszín";
+            ColLocation.Name = "ColLocation";
+            ColLocation.ReadOnly = true;
+            // 
+            // ColQuantity
+            // 
+            ColQuantity.HeaderText = "Mennyiség";
+            ColQuantity.Name = "ColQuantity";
+            ColQuantity.ReadOnly = true;
+            // 
             // StorageWorkerHomepage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(586, 450);
+            Controls.Add(ItemsToCollectDataGrid);
             Controls.Add(menuStrip);
             MainMenuStrip = menuStrip;
             Name = "StorageWorkerHomepage";
             Text = "Kezdőlap";
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ItemsToCollectDataGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -86,5 +137,11 @@
         private ToolStripMenuItem lowStock;
         private ToolStripMenuItem storageQuery;
         private ToolStripMenuItem TyreAdd;
+        private DataGridView ItemsToCollectDataGrid;
+        private DataGridViewTextBoxColumn ColId;
+        private DataGridViewTextBoxColumn ColBrand;
+        private DataGridViewTextBoxColumn ColName;
+        private DataGridViewTextBoxColumn ColLocation;
+        private DataGridViewTextBoxColumn ColQuantity;
     }
 }

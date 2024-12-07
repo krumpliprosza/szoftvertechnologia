@@ -100,6 +100,8 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                     doc.Save("Data/order.xml");
                     MessageBox.Show("Termék sikeresen hozzáadva a rendeléshez!", "Sikeres hozzáadás", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
+                    AdministratorHomepage administratorHomepage = new AdministratorHomepage();
+                    administratorHomepage.Show();
                 }
             }
         }

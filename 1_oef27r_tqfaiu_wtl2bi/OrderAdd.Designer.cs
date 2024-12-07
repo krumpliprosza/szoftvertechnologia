@@ -129,7 +129,7 @@
             Controls.Add(seasonLabel);
             Controls.Add(nameLabel);
             Name = "OrderAdd";
-            Text = "OrderAdd";
+            Text = "Rendelés felvétele";
             ResumeLayout(false);
             PerformLayout();
         }
