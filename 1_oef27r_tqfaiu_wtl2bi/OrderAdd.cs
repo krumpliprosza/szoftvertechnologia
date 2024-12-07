@@ -26,7 +26,8 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             string customerName = NameInput.Text;
             string customerTelNo = TelNoInput.Text;
             string customerLicenseNumber = LicNoInput.Text;
-            DateTime orderDate = EndDateInput.Value;
+            DateTime date = EndDateInput.Value;
+            string orderDate = date.ToString("yyyy. MM. dd.");
             // Input átvizsgálása
             if (string.IsNullOrEmpty(customerName) || string.IsNullOrEmpty(customerTelNo) || string.IsNullOrEmpty(customerLicenseNumber))
             {

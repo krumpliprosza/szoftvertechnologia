@@ -7,11 +7,7 @@
 			<licenseNumber>IFF-423</licenseNumber>
 		</customer>
 		<chosenTyres>
-			<chosenTyre>
-				<brand>Michelin</brand>
-				<name>Pilot Sport 4</name>
-				<quantity>8</quantity>
-			</chosenTyre>
+			
 		</chosenTyres>
 		<chosenServices>
 			<chosenService>
@@ -22,7 +18,7 @@
 			</chosenService>
 		</chosenServices>
 		<endDate>2024. 12. 08.</endDate>
-		<totalPrice>35000</totalPrice>
+		<totalPrice>0</totalPrice>
 		<status>Felvételre vár</status>
 	</order>
 </orders>
