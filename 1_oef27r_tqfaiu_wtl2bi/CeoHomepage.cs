@@ -49,10 +49,26 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                     t.Element("name").Value,
                     int.Parse(t.Element("price").Value)
                     )).ToList();
-            if(tprice.Count > 0)
+            if (tprice.Count > 0)
             {
                 TyrePrices tyrePrices = new TyrePrices(tprice);
                 tyrePrices.Show();
+            }
+        }
+
+        private void szolgáltatásokToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XDocument doc = XDocument.Load("Data/service.xml");
+            var sprice = doc.Descendants("service")
+                .Where(t => int.Parse(t.Element("basePrice").Value) != 0)
+                .Select(t => new Service(
+                    t.Element("name").Value,
+                    int.Parse(t.Element("basePrice").Value)
+                    )).ToList();
+            if (sprice.Count > 0)
+            {
+                ServicePrices servicePrices = new ServicePrices(sprice);
+                servicePrices.Show();
             }
         }
     }
