@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -180,22 +181,22 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             )
             .Select(t => new
             { // Adatok kinyerese a talalt elemekbol
-                ColId = int.Parse(t.Element("id")?.Value),
-                ColBrand = t.Element("brand")?.Value,
-                ColName = t.Element("name")?.Value,
-                ColSeason = t.Element("season")?.Value,
-                ColFuelEfficiency = t.Element("fuelEfficiency")?.Value,
-                ColStoppingDistance = t.Element("stoppingDistance")?.Value,
-                ColPunctureResistance = t.Element("punctureResistance")?.Value,
-                ColSpeedIndex = t.Element("speedIndex")?.Value,
-                ColLocation = t.Element("location")?.Value,
-                ColQuantity = int.Parse(t.Element("quantity")?.Value),
-                ColPrice = int.Parse(t.Element("price")?.Value),
-                ColProfileWidth = int.Parse(t.Element("profileWidth")?.Value),
-                ColProfileRatio = int.Parse(t.Element("profileRatio")?.Value),
-                ColDiameter = int.Parse(t.Element("diameter")?.Value),
-                ColRollingNoise = int.Parse(t.Element("rollingNoise")?.Value),
-                ColLoadIndex = int.Parse(t.Element("loadIndex")?.Value),
+                ColId = int.Parse(t.Element("id")?.Value ?? "0"),
+                ColBrand = t.Element("brand")?.Value ?? "Unknown",
+                ColName = t.Element("name")?.Value ?? "Unknown",
+                ColSeason = t.Element("season")?.Value ?? "Unknown",
+                ColFuelEfficiency = t.Element("fuelEfficiency")?.Value ?? "Unknown",
+                ColStoppingDistance = t.Element("stoppingDistance")?.Value ?? "Unknown",
+                ColPunctureResistance = t.Element("punctureResistance")?.Value ?? "Unknown",
+                ColSpeedIndex = t.Element("speedIndex")?.Value ?? "Unknown",
+                ColLocation = t.Element("location")?.Value ?? "Unknown",
+                ColQuantity = int.Parse(t.Element("quantity")?.Value ?? "0"),
+                ColPrice = int.Parse(t.Element("price")?.Value ?? "0"),
+                ColProfileWidth = int.Parse(t.Element("profileWidth")?.Value ?? "0"),
+                ColProfileRatio = int.Parse(t.Element("profileRatio")?.Value ?? "0"),
+                ColDiameter = int.Parse(t.Element("diameter")?.Value ?? "0"),
+                ColRollingNoise = int.Parse(t.Element("rollingNoise")?.Value ?? "0"),
+                ColLoadIndex = int.Parse(t.Element("loadIndex")?.Value ?? "0")
             })
             .ToList();
             // A kimeneti tablazatban esetlegesen elofordulo sorok (pl. ha nem az elso kereses tortenik, akkor az elozo eredmeny) eltavolitasa

@@ -1079,22 +1079,4 @@
     <quantity>3</quantity>
     <price>25000</price>
   </tyre>
-	<tyre>
-		<id>61</id>
-		<name>Pilota Sport 4</name>
-		<brand>Michelain</brand>
-		<season>Nyári</season>
-		<profileWidth>205</profileWidth>
-		<profileRatio>55</profileRatio>
-		<diameter>16</diameter>
-		<fuelEfficiency>B</fuelEfficiency>
-		<stoppingDistance>A</stoppingDistance>
-		<rollingNoise>69</rollingNoise>
-		<punctureResistance>Nem</punctureResistance>
-		<loadIndex>91</loadIndex>
-		<speedIndex>V</speedIndex>
-		<location>A1</location>
-		<quantity>4</quantity>
-		<price>24000</price>
-	</tyre>
 </tyres>

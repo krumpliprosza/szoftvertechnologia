@@ -68,6 +68,7 @@
             // 
             NameValue.Location = new Point(105, 65);
             NameValue.Name = "NameValue";
+            NameValue.ReadOnly = true;
             NameValue.Size = new Size(100, 23);
             NameValue.TabIndex = 37;
             // 
@@ -75,6 +76,7 @@
             // 
             BrandValue.Location = new Point(105, 38);
             BrandValue.Name = "BrandValue";
+            BrandValue.ReadOnly = true;
             BrandValue.Size = new Size(100, 23);
             BrandValue.TabIndex = 36;
             // 
@@ -190,6 +192,7 @@
             // 
             SeasonValue.Location = new Point(105, 92);
             SeasonValue.Name = "SeasonValue";
+            SeasonValue.ReadOnly = true;
             SeasonValue.Size = new Size(100, 23);
             SeasonValue.TabIndex = 38;
             // 
@@ -197,6 +200,7 @@
             // 
             ProfileWidthValue.Location = new Point(105, 119);
             ProfileWidthValue.Name = "ProfileWidthValue";
+            ProfileWidthValue.ReadOnly = true;
             ProfileWidthValue.Size = new Size(100, 23);
             ProfileWidthValue.TabIndex = 39;
             // 
@@ -204,6 +208,7 @@
             // 
             ProfileRatioValue.Location = new Point(105, 146);
             ProfileRatioValue.Name = "ProfileRatioValue";
+            ProfileRatioValue.ReadOnly = true;
             ProfileRatioValue.Size = new Size(100, 23);
             ProfileRatioValue.TabIndex = 40;
             // 
@@ -211,6 +216,7 @@
             // 
             DiameterValue.Location = new Point(105, 173);
             DiameterValue.Name = "DiameterValue";
+            DiameterValue.ReadOnly = true;
             DiameterValue.Size = new Size(100, 23);
             DiameterValue.TabIndex = 41;
             // 
@@ -218,6 +224,7 @@
             // 
             FuelEfficiencyValue.Location = new Point(105, 200);
             FuelEfficiencyValue.Name = "FuelEfficiencyValue";
+            FuelEfficiencyValue.ReadOnly = true;
             FuelEfficiencyValue.Size = new Size(100, 23);
             FuelEfficiencyValue.TabIndex = 42;
             // 
@@ -225,6 +232,7 @@
             // 
             StoppingDistanceValue.Location = new Point(105, 227);
             StoppingDistanceValue.Name = "StoppingDistanceValue";
+            StoppingDistanceValue.ReadOnly = true;
             StoppingDistanceValue.Size = new Size(100, 23);
             StoppingDistanceValue.TabIndex = 43;
             // 
@@ -232,6 +240,7 @@
             // 
             PunctureResistanceValue.Location = new Point(105, 254);
             PunctureResistanceValue.Name = "PunctureResistanceValue";
+            PunctureResistanceValue.ReadOnly = true;
             PunctureResistanceValue.Size = new Size(100, 23);
             PunctureResistanceValue.TabIndex = 44;
             // 
@@ -239,6 +248,7 @@
             // 
             RollingNoiseValue.Location = new Point(105, 281);
             RollingNoiseValue.Name = "RollingNoiseValue";
+            RollingNoiseValue.ReadOnly = true;
             RollingNoiseValue.Size = new Size(100, 23);
             RollingNoiseValue.TabIndex = 45;
             // 
@@ -246,6 +256,7 @@
             // 
             LoadIndexValue.Location = new Point(105, 308);
             LoadIndexValue.Name = "LoadIndexValue";
+            LoadIndexValue.ReadOnly = true;
             LoadIndexValue.Size = new Size(100, 23);
             LoadIndexValue.TabIndex = 46;
             // 
@@ -253,6 +264,7 @@
             // 
             SpeedIndexValue.Location = new Point(105, 335);
             SpeedIndexValue.Name = "SpeedIndexValue";
+            SpeedIndexValue.ReadOnly = true;
             SpeedIndexValue.Size = new Size(100, 23);
             SpeedIndexValue.TabIndex = 47;
             // 
@@ -301,6 +313,7 @@
             // 
             PriceValue.Location = new Point(105, 416);
             PriceValue.Name = "PriceValue";
+            PriceValue.ReadOnly = true;
             PriceValue.Size = new Size(100, 23);
             PriceValue.TabIndex = 53;
             // 
@@ -328,6 +341,7 @@
             // 
             IdValue.Location = new Point(105, 11);
             IdValue.Name = "IdValue";
+            IdValue.ReadOnly = true;
             IdValue.Size = new Size(100, 23);
             IdValue.TabIndex = 57;
             // 

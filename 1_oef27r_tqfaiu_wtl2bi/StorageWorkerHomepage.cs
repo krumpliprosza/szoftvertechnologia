@@ -53,5 +53,12 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             Search searchPage = new Search();
             searchPage.Show();
         }
+
+        private void TyreAdd_Click(object sender, EventArgs e)
+        {
+            // Hozzaado oldal megnyitasa
+            TyreAdd TyreAddPage = new TyreAdd();
+            TyreAddPage.Show();
+        }
     }
 }

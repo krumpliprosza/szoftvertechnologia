@@ -31,12 +31,13 @@
             menuStrip = new MenuStrip();
             lowStock = new ToolStripMenuItem();
             storageQuery = new ToolStripMenuItem();
+            TyreAdd = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip
             // 
-            menuStrip.Items.AddRange(new ToolStripItem[] { lowStock, storageQuery });
+            menuStrip.Items.AddRange(new ToolStripItem[] { lowStock, storageQuery, TyreAdd });
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
             menuStrip.Size = new Size(800, 24);
@@ -53,9 +54,16 @@
             // storageQuery
             // 
             storageQuery.Name = "storageQuery";
-            storageQuery.Size = new Size(58, 20);
-            storageQuery.Text = "Keresés";
+            storageQuery.Size = new Size(130, 20);
+            storageQuery.Text = "Keresés és módosítás";
             storageQuery.Click += storageQuery_Click;
+            // 
+            // TyreAdd
+            // 
+            TyreAdd.Name = "TyreAdd";
+            TyreAdd.Size = new Size(148, 20);
+            TyreAdd.Text = "Új autógumi hozzáadása";
+            TyreAdd.Click += TyreAdd_Click;
             // 
             // StorageWorkerHomepage
             // 
@@ -77,5 +85,6 @@
         private MenuStrip menuStrip;
         private ToolStripMenuItem lowStock;
         private ToolStripMenuItem storageQuery;
+        private ToolStripMenuItem TyreAdd;
     }
 }

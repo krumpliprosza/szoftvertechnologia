@@ -5,6 +5,7 @@ using System.Xml.Linq;
 
 namespace _1_oef27r_tqfaiu_wtl2bi
 {
+    /* Szukseges volt kikommentelni, 8 hibat okoz es nem lehet elinditani vele a programot pedig nincs is hasznalva
     public partial class EditWorkerData : Form
     {
         public EditWorkerData()
@@ -98,4 +99,5 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             return password.Length >= 6;
         }
     }
+    */
 }
