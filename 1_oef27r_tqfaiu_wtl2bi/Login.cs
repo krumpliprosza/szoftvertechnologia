@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿using _1_oef27r_tqfaiu_wtl2bi.Classes;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                       .FirstOrDefault(w => (string)w.Element("username") == username &&
                                            (string)w.Element("password") == password);
             // Szerep kiolvasasa
-            if (worker != null) { role = int.Parse((string)worker.Element("role")); }
+            if (worker != null) { role = int.Parse((string)worker.Element("role")); UserSession.CurrentUserRole = role; }
             // Szerep vizsgalata/hibakezeles
             switch (role)
             {
@@ -45,11 +46,13 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                     this.Hide();
                     break;
                 case 1: // Ugyintezo
-
+                    AdministratorHomepage AdministratorPage = new AdministratorHomepage();
+                    AdministratorPage.Show();
+                    this.Hide();
                     break;
                 case 2: // Raktaros
-                    StorageWorkerHomepage homepage = new StorageWorkerHomepage();
-                    homepage.Show();
+                    StorageWorkerHomepage StorageWorkerPage = new StorageWorkerHomepage();
+                    StorageWorkerPage.Show();
                     this.Hide();
                     break;
                 case 3: // Szerelo

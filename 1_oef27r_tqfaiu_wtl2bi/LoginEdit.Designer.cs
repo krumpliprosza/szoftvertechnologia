@@ -43,6 +43,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(360, 426);
             dataGridView1.TabIndex = 0;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // username
             // 

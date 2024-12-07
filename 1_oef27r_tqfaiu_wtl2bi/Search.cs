@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1_oef27r_tqfaiu_wtl2bi.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -231,9 +232,27 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             {
                 // A kivalasztott sor adatai
                 var selectedRow = FoundTyresDataGrid.SelectedRows[0];
-                // Az adatokkal meghivja a kezelo konstruktorat
-                TyreDetails tyrepage = new TyreDetails(selectedRow, this);
-                tyrepage.Show();
+                switch (UserSession.CurrentUserRole)
+                {
+                    case 0: // Cegvezeto 
+
+                        break;
+                    case 1: // Ugyintezo 
+                        TyreToOrder tyretoorder = new TyreToOrder(selectedRow, this);
+                        tyretoorder.Show();
+                        break;
+                    case 2: // Raktaros
+                        // Az adatokkal meghivja a kezelo konstruktorat
+                        TyreDetails tyrepage = new TyreDetails(selectedRow, this);
+                        tyrepage.Show();
+                        break;
+                    case 3: // Szerelo
+
+                        break;
+                    default:
+                        MessageBox.Show("Ismeretlen szerep!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
             }
         }
     }
