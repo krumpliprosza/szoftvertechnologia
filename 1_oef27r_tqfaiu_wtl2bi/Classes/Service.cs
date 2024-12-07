@@ -18,6 +18,15 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
 
         #endregion
         #region public:
+        #region constructors
+        public Service() { }
+
+        public Service(string name, int basePrice)
+        {
+            this.name = name;
+            this.price = basePrice;
+        }
+        #endregion
         #region get/set functions
         public string GetName()
         {

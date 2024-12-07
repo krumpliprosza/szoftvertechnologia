@@ -71,6 +71,7 @@
             szolgáltatásokToolStripMenuItem.Name = "szolgáltatásokToolStripMenuItem";
             szolgáltatásokToolStripMenuItem.Size = new Size(180, 22);
             szolgáltatásokToolStripMenuItem.Text = "Szolgáltatások";
+            szolgáltatásokToolStripMenuItem.Click += szolgáltatásokToolStripMenuItem_Click;
             // 
             // CeoHomepage
             // 
