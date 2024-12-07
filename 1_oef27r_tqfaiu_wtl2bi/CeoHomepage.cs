@@ -20,7 +20,8 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void bejelentkezésiAdatokSzerkesztéseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             XDocument doc = XDocument.Load("Data/worker.xml");
             var workers = doc.Descendants("worker")
@@ -30,10 +31,28 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                     t.Element("password").Value,
                     int.Parse(t.Element("role").Value)
                     )).ToList();
-            if(workers.Count > 0)
+            if (workers.Count > 0)
             {
                 LoginEdit lge = new LoginEdit(workers);
                 lge.ShowDialog();
+            }
+        }
+
+        private void termékekToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            XDocument doc = XDocument.Load("Data/tyre.xml");
+            var tprice = doc.Descendants("tyre")
+                .Where(t => int.Parse(t.Element("price").Value) != 0)
+                .Select(t => new Tyre(
+                    int.Parse(t.Element("id").Value),
+                    t.Element("brand").Value,
+                    t.Element("name").Value,
+                    int.Parse(t.Element("price").Value)
+                    )).ToList();
+            if(tprice.Count > 0)
+            {
+                TyrePrices tyrePrices = new TyrePrices(tprice);
+                tyrePrices.Show();
             }
         }
     }

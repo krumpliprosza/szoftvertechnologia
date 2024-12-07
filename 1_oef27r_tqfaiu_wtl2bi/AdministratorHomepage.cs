@@ -34,6 +34,8 @@ namespace _1_oef27r_tqfaiu_wtl2bi
         private void ServiceQuery_Click(object sender, EventArgs e)
         {
             // Kereses oldal megnyitasa
+            ServiceAdd serviceAddPage = new ServiceAdd();
+            serviceAddPage.Show();
         }
     }
 }

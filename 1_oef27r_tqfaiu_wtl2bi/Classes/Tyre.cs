@@ -42,6 +42,13 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
             this.quantity = quantity;
             this.location = location;
         }
+        public Tyre(int id, string brand, string name, int price)
+        {
+            this.id = id;
+            this.name = name;
+            this.brand = brand;
+            this.price = price;
+        }
         #endregion
         #region get/set functions
         public int GetId()

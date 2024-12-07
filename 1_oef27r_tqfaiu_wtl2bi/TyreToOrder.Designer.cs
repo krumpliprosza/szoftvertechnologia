@@ -60,10 +60,13 @@
             seasonLabel = new Label();
             nameLabel = new Label();
             brandLabel = new Label();
-            dataGridView1 = new DataGridView();
+            OrderDataGrid = new DataGridView();
+            OrderQuantityInput = new TextBox();
+            OrderQuantityLabel = new Label();
+            ColId = new DataGridViewTextBoxColumn();
             ColName = new DataGridViewTextBoxColumn();
             ColLicenseNumber = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)OrderDataGrid).BeginInit();
             SuspendLayout();
             // 
             // IdValue
@@ -338,16 +341,39 @@
             brandLabel.TabIndex = 58;
             brandLabel.Text = "Márka";
             // 
-            // dataGridView1
+            // OrderDataGrid
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColName, ColLicenseNumber });
-            dataGridView1.Location = new Point(232, 15);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(256, 425);
-            dataGridView1.TabIndex = 92;
+            OrderDataGrid.AllowUserToAddRows = false;
+            OrderDataGrid.AllowUserToDeleteRows = false;
+            OrderDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            OrderDataGrid.Columns.AddRange(new DataGridViewColumn[] { ColId, ColName, ColLicenseNumber });
+            OrderDataGrid.Location = new Point(232, 12);
+            OrderDataGrid.Name = "OrderDataGrid";
+            OrderDataGrid.Size = new Size(256, 371);
+            OrderDataGrid.TabIndex = 92;
+            OrderDataGrid.SelectionChanged += OrderDataGrid_SelectionChanged;
+            // 
+            // OrderQuantityInput
+            // 
+            OrderQuantityInput.Location = new Point(388, 417);
+            OrderQuantityInput.Name = "OrderQuantityInput";
+            OrderQuantityInput.Size = new Size(100, 23);
+            OrderQuantityInput.TabIndex = 94;
+            // 
+            // OrderQuantityLabel
+            // 
+            OrderQuantityLabel.AutoSize = true;
+            OrderQuantityLabel.Location = new Point(423, 398);
+            OrderQuantityLabel.Name = "OrderQuantityLabel";
+            OrderQuantityLabel.Size = new Size(65, 15);
+            OrderQuantityLabel.TabIndex = 93;
+            OrderQuantityLabel.Text = "Mennyiség";
+            // 
+            // ColId
+            // 
+            ColId.HeaderText = "Azonosító";
+            ColId.Name = "ColId";
+            ColId.ReadOnly = true;
             // 
             // ColName
             // 
@@ -366,7 +392,9 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(500, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(OrderQuantityInput);
+            Controls.Add(OrderQuantityLabel);
+            Controls.Add(OrderDataGrid);
             Controls.Add(IdValue);
             Controls.Add(IdLabel);
             Controls.Add(PriceValue);
@@ -401,7 +429,7 @@
             Controls.Add(brandLabel);
             Name = "TyreToOrder";
             Text = "Termék rendelése";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)OrderDataGrid).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -440,8 +468,11 @@
         private Label seasonLabel;
         private Label nameLabel;
         private Label brandLabel;
-        private DataGridView dataGridView1;
+        private DataGridView OrderDataGrid;
         private DataGridViewTextBoxColumn ColName;
         private DataGridViewTextBoxColumn ColLicenseNumber;
+        private TextBox OrderQuantityInput;
+        private Label OrderQuantityLabel;
+        private DataGridViewTextBoxColumn ColId;
     }
 }
