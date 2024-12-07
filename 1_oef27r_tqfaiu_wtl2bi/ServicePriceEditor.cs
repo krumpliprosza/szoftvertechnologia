@@ -40,7 +40,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             }
             else
             {
-                MessageBox.Show("A módosítandó abroncs nem található!", "Módosítási hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("A módosítandó elem nem található!", "Módosítási hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
