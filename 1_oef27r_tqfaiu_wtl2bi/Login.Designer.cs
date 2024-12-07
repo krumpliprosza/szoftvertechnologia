@@ -38,51 +38,54 @@
             // UsernameLabel
             // 
             UsernameLabel.AutoSize = true;
-            UsernameLabel.Location = new Point(66, 72);
+            UsernameLabel.Font = new Font("Segoe UI", 13F);
+            UsernameLabel.Location = new Point(12, 9);
             UsernameLabel.Name = "UsernameLabel";
-            UsernameLabel.Size = new Size(87, 15);
+            UsernameLabel.Size = new Size(131, 25);
             UsernameLabel.TabIndex = 0;
             UsernameLabel.Text = "Felhasználónév";
             // 
             // PasswordLabel
             // 
             PasswordLabel.AutoSize = true;
-            PasswordLabel.Location = new Point(66, 183);
+            PasswordLabel.Font = new Font("Segoe UI", 13F);
+            PasswordLabel.Location = new Point(12, 77);
             PasswordLabel.Name = "PasswordLabel";
-            PasswordLabel.Size = new Size(37, 15);
+            PasswordLabel.Size = new Size(58, 25);
             PasswordLabel.TabIndex = 1;
             PasswordLabel.Text = "Jelszó";
             // 
             // UsernameTextBox
             // 
-            UsernameTextBox.Location = new Point(66, 90);
+            UsernameTextBox.Location = new Point(12, 37);
             UsernameTextBox.Name = "UsernameTextBox";
-            UsernameTextBox.Size = new Size(100, 23);
+            UsernameTextBox.Size = new Size(155, 23);
             UsernameTextBox.TabIndex = 2;
             // 
             // PasswordTextBox
             // 
-            PasswordTextBox.Location = new Point(66, 201);
+            PasswordTextBox.Location = new Point(12, 105);
             PasswordTextBox.Name = "PasswordTextBox";
             PasswordTextBox.PasswordChar = '•';
-            PasswordTextBox.Size = new Size(100, 23);
+            PasswordTextBox.Size = new Size(155, 23);
             PasswordTextBox.TabIndex = 3;
             // 
             // LoginButton
             // 
-            LoginButton.Location = new Point(66, 266);
+            LoginButton.Location = new Point(12, 160);
             LoginButton.Name = "LoginButton";
-            LoginButton.Size = new Size(100, 23);
+            LoginButton.Size = new Size(155, 52);
             LoginButton.TabIndex = 4;
             LoginButton.Text = "Bejelentkezés";
             LoginButton.UseVisualStyleBackColor = true;
             LoginButton.Click += LoginButton_Click;
+            LoginButton.KeyDown += Login_KeyDown;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(179, 224);
             Controls.Add(LoginButton);
             Controls.Add(PasswordTextBox);
             Controls.Add(UsernameTextBox);

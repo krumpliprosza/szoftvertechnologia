@@ -1,6 +1,6 @@
 ﻿namespace _1_oef27r_tqfaiu_wtl2bi
 {
-    partial class LoginEdit
+    partial class TyrePrices
     {
         /// <summary>
         /// Required designer variable.
@@ -29,57 +29,60 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            username = new DataGridViewTextBoxColumn();
-            password = new DataGridViewTextBoxColumn();
-            role = new DataGridViewTextBoxColumn();
+            colID = new DataGridViewTextBoxColumn();
+            colBrand = new DataGridViewTextBoxColumn();
+            colName = new DataGridViewTextBoxColumn();
+            colPrice = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { username, password, role });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colID, colBrand, colName, colPrice });
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(360, 426);
-            dataGridView1.TabIndex = 0;
+            dataGridView1.Size = new Size(541, 426);
+            dataGridView1.TabIndex = 1;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
-            // username
+            // colID
             // 
-            username.HeaderText = "Felhasználónév";
-            username.Name = "username";
+            colID.HeaderText = "Azonosító";
+            colID.Name = "colID";
             // 
-            // password
+            // colBrand
             // 
-            password.HeaderText = "Jelszó";
-            password.Name = "password";
+            colBrand.HeaderText = "Márka";
+            colBrand.Name = "colBrand";
             // 
-            // role
+            // colName
             // 
-            role.HeaderText = "Beosztás kódja";
-            role.Name = "role";
-            role.ReadOnly = true;
+            colName.HeaderText = "Név";
+            colName.Name = "colName";
             // 
-            // LoginEdit
+            // colPrice
+            // 
+            colPrice.HeaderText = "Ár";
+            colPrice.Name = "colPrice";
+            // 
+            // TyrePrices
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(384, 450);
+            ClientSize = new Size(565, 450);
             Controls.Add(dataGridView1);
-            Name = "LoginEdit";
-            Text = "LoginEdit";
+            Name = "TyrePrices";
+            Text = "TyrePrices";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn username;
-        private DataGridViewTextBoxColumn password;
-        private DataGridViewTextBoxColumn role;
+        private DataGridViewTextBoxColumn colID;
+        private DataGridViewTextBoxColumn colBrand;
+        private DataGridViewTextBoxColumn colName;
+        private DataGridViewTextBoxColumn colPrice;
     }
 }
