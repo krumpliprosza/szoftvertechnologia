@@ -21,6 +21,7 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
         private string squantity = "";
         private string endDate = "";
         private string totalPrice = "";
+        private string status = "";
         #endregion
         #endregion
         #region protected:
@@ -47,8 +48,23 @@ namespace _1_oef27r_tqfaiu_wtl2bi.Classes
             this.endDate = endDate;
             this.totalPrice = totalPrice;
         }
+
+        public Order(string licenseno,string brandName,string tyreName,string tquantity,
+            string sName,string squantity,string endDate,string status)
+        {
+            this.licenseNo = licenseno;
+            this.brandName = brandName;
+            this.tyreName = tyreName;
+            this.tquantity = tquantity;
+            this.sName = sName;
+            this.squantity = squantity;
+            this.endDate = endDate;
+            this.status=status;
+        }
         #endregion
         #region get/set functions
+        public string getStatus() { return status; }
+        public void setStatus(string status) { this.status = status; }
 
         public string getEnddate() { return endDate; }
 

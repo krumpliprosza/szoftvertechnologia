@@ -31,7 +31,6 @@ namespace _1_oef27r_tqfaiu_wtl2bi
        
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            Debug.WriteLine("valami tortenik");
             if (dataGridView1.SelectedRows.Count == 1)
             {
                 var selectedRow=dataGridView1.SelectedRows[0];

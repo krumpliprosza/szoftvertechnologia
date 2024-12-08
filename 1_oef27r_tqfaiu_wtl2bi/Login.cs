@@ -56,7 +56,9 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                     this.Hide();
                     break;
                 case 3: // Szerelo
-
+                    WorkshopHomePage workshopHomePage=new WorkshopHomePage();
+                    workshopHomePage.Show();
+                    this.Hide();
                     break;
                 default: // Hibas adatok (nem kerul atirasra a role, igy -1 ertekkel rendelkezik)
                     MessageBox.Show("Hibás felhasználónév/jelszó!", "Bejelentkezési hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
