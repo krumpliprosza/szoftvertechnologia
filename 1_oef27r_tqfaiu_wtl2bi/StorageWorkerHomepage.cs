@@ -103,23 +103,101 @@ namespace _1_oef27r_tqfaiu_wtl2bi
                 var selectedRow = ItemsToCollectDataGrid.SelectedRows[0];
                 int orderId = int.Parse(selectedRow.Cells["ColId"].Value?.ToString());
                 XDocument orderDoc = XDocument.Load("Data/order.xml");
+
                 var order = orderDoc.Descendants("order")
                                     .FirstOrDefault(o => (int)o.Element("id") == orderId);
 
                 if (order != null)
                 {
-                    bool hasServices = order.Element("chosenServices")?.Elements("chosenService").Any() ?? false;
-                    if (hasServices)
+                    var chosenTyres = order.Element("chosenTyres")?.Elements("chosenTyre");
+
+                    if (chosenTyres != null && chosenTyres.Any())
                     {
-                        order.Element("status")?.SetValue("Szerelés alatt");
+                        XDocument tyresDoc = XDocument.Load("Data/tyre.xml");
+                        bool insufficientStock = false;
+
+                        foreach (var chosenTyre in chosenTyres)
+                        {
+                            string tyreNameToFind = chosenTyre.Element("name")?.Value;
+                            int tyreQuantity = int.Parse(chosenTyre.Element("quantity")?.Value ?? "0");
+
+                            if (!string.IsNullOrEmpty(tyreNameToFind))
+                            {
+                                var stockTyre = tyresDoc.Descendants("tyre")
+                                                        .FirstOrDefault(t => t.Element("name")?.Value == tyreNameToFind);
+
+                                if (stockTyre != null)
+                                {
+                                    int stockQuantity = int.Parse(stockTyre.Element("quantity")?.Value ?? "0");
+
+                                    if (tyreQuantity > stockQuantity)
+                                    {
+                                        MessageBox.Show(
+                                            $"A kiválasztott abroncsból ('{tyreNameToFind}') nincs elegendő darabszámban.",
+                                            "Hiba",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Error
+                                        );
+                                        insufficientStock = true;
+                                        break;
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show(
+                                        $"A kiválasztott abroncs ('{tyreNameToFind}') nem található a készletben.",
+                                        "Hiba",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error
+                                    );
+                                    insufficientStock = true;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (insufficientStock)
+                        {
+                            return;
+                        }
+                        foreach (var chosenTyre in chosenTyres)
+                        {
+                            string tyreNameToFind = chosenTyre.Element("name")?.Value;
+                            int tyreQuantity = int.Parse(chosenTyre.Element("quantity")?.Value ?? "0");
+
+                            var stockTyre = tyresDoc.Descendants("tyre")
+                                                    .FirstOrDefault(t => t.Element("name")?.Value == tyreNameToFind);
+
+                            if (stockTyre != null)
+                            {
+                                int stockQuantity = int.Parse(stockTyre.Element("quantity")?.Value ?? "0");
+                                stockTyre.Element("quantity").SetValue(stockQuantity - tyreQuantity);
+                            }
+                        }
+                        tyresDoc.Save("Data/tyre.xml");
+                        bool hasServices = order.Element("chosenServices")?.Elements("chosenService").Any() ?? false;
+                        if (hasServices)
+                        {
+                            order.Element("status")?.SetValue("Szerelés alatt");
+                        }
+                        else
+                        {
+                            order.Element("status")?.SetValue("Kész");
+                        }
+                        orderDoc.Save("Data/order.xml");
+
+                        MessageBox.Show("Az abroncsok sikeresen előkészítve és rendelés státusza frissítve!", "Siker", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        PopulateItemsToCollectDataGrid();
                     }
                     else
                     {
-                        order.Element("status")?.SetValue("Kész");
+                        MessageBox.Show("A rendelés nem tartalmaz kiválasztott abroncsokat.", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    orderDoc.Save("Data/order.xml");
-                    MessageBox.Show("Rendelés státusza frissítve!", "Státusz frissítve", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    PopulateItemsToCollectDataGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Rendelés nem található.", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
