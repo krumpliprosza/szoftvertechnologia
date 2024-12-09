@@ -36,6 +36,8 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { name, baseprice });
             dataGridView1.Location = new Point(12, 12);
@@ -62,7 +64,7 @@
             ClientSize = new Size(343, 450);
             Controls.Add(dataGridView1);
             Name = "ServicePrices";
-            Text = "ServicePrices";
+            Text = "Szolgáltatások árai";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

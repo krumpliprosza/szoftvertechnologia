@@ -38,6 +38,8 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colID, colBrand, colName, colPrice });
             dataGridView1.Location = new Point(12, 12);
@@ -73,7 +75,7 @@
             ClientSize = new Size(565, 450);
             Controls.Add(dataGridView1);
             Name = "TyrePrices";
-            Text = "TyrePrices";
+            Text = "Abroncsok árai";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

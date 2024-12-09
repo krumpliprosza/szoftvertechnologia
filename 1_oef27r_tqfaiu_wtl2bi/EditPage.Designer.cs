@@ -123,7 +123,7 @@
             Controls.Add(roleBox);
             Controls.Add(label1);
             Name = "EditPage";
-            Text = "EditPage";
+            Text = "Felhasználói adatok szerkesztése";
             ResumeLayout(false);
             PerformLayout();
         }

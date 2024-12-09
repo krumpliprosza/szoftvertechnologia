@@ -22,17 +22,17 @@ namespace _1_oef27r_tqfaiu_wtl2bi
             XDocument doc = XDocument.Load("Data/order.xml");
             var orid = doc.Descendants("order")
                 .Select(t => new Order(
-                    t.Element("id").Value,
-                    t.Element("customer").Element("name").Value,
-                    t.Element("customer").Element("telNo").Value,
-                    t.Element("customer").Element("licenseNumber").Value,
-                    t.Element("chosenTyres").Element("chosenTyre").Element("brand").Value,
-                    t.Element("chosenTyres").Element("chosenTyre").Element("name").Value,
-                    t.Element("chosenTyres").Element("chosenTyre").Element("quantity").Value,
-                    t.Element("chosenServices").Element("chosenService").Element("name").Value,
-                    t.Element("chosenServices").Element("chosenService").Element("quantity").Value,
-                    t.Element("endDate").Value,
-                    t.Element("totalPrice").Value
+                    t.Element("id")?.Value ?? "N/A",
+                    t.Element("customer")?.Element("name")?.Value ?? "N/A",
+                    t.Element("customer")?.Element("telNo")?.Value ?? "N/A",
+                    t.Element("customer")?.Element("licenseNumber")?.Value ?? "N/A",
+                    t.Element("chosenTyres")?.Element("chosenTyre")?.Element("brand")?.Value ?? "N/A",
+                    t.Element("chosenTyres")?.Element("chosenTyre")?.Element("name")?.Value ?? "N/A",
+                    t.Element("chosenTyres")?.Element("chosenTyre")?.Element("quantity")?.Value ?? "N/A",
+                    t.Element("chosenServices")?.Element("chosenService")?.Element("name")?.Value ?? "N/A",
+                    t.Element("chosenServices")?.Element("chosenService")?.Element("quantity")?.Value ?? "N/A",
+                    t.Element("endDate")?.Value ?? "N/A",
+                    t.Element("totalPrice")?.Value ?? "N/A"
                     )).ToList();
             foreach(var order in orid)
             {
