@@ -23,17 +23,17 @@ namespace _1_oef27r_tqfaiu_wtl2bi
 
             XDocument doc = XDocument.Load("Data/order.xml");
             var or = doc.Descendants("order")
-                .Where(t => t.Element("status").Value != "Kész")
+                .Where(t => t.Element("status")?.Value == "Szerelés alatt")
                 .Select(t => new Order(
-                    t.Element("customer").Element("licenseNumber").Value,
-                    t.Element("chosenTyres").Element("chosenTyre").Element("brand").Value,
-                    t.Element("chosenTyres").Element("chosenTyre").Element("name").Value,
-                    t.Element("chosenTyres").Element("chosenTyre").Element("quantity").Value,
-                    t.Element("chosenServices").Element("chosenService").Element("name").Value,
-                    t.Element("chosenServices").Element("chosenService").Element("quantity").Value,
-                    t.Element("endDate").Value,
-                    t.Element("status").Value
-                    )).ToList();
+                    t.Element("customer")?.Element("licenseNumber")?.Value ?? "N/A",
+                    t.Element("chosenTyres")?.Element("chosenTyre")?.Element("brand")?.Value ?? "N/A",
+                    t.Element("chosenTyres")?.Element("chosenTyre")?.Element("name")?.Value ?? "N/A",
+                    t.Element("chosenTyres")?.Element("chosenTyre")?.Element("quantity")?.Value ?? "N/A",
+                    t.Element("chosenServices")?.Element("chosenService")?.Element("name")?.Value ?? "N/A",
+                    t.Element("chosenServices")?.Element("chosenService")?.Element("quantity")?.Value ?? "N/A",
+                    t.Element("endDate")?.Value ?? "N/A",
+                    t.Element("status")?.Value ?? "N/A"
+                )).ToList();
 
             foreach (var order in or)
             {
